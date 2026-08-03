@@ -1,15 +1,16 @@
-# V9
+# Kaza Namazı Hesaplama V1
 
-- Yakındaki 6 şehir otomatik iç linkleme
-- 4 blog yazısı ve blog şablonu
-- Footer sitemap/robots linkleri kaldırıldı
-- Footer popüler şehirler ve blog linkleri eklendi
+Statik, Cloudflare Pages/Workers uyumlu hesaplama ve SEO içerik sitesi.
 
-Cloudflare: `python build.py` ve `npx wrangler deploy`
+## Build
 
+```bash
+python build.py
+```
 
-## V10 Ana Sayfa İçerik Güncellemesi
+Çıktı `dist/` klasörüne oluşturulur.
 
-- Kullanıcının ilettiği ana sayfa metinleri birebir uygulandı.
-- H1, içerik bölümleri, SSS ve FAQ schema güncellendi.
-- Metinlerde editoryal değişiklik yapılmadı.
+## Yayın
+
+Cloudflare build command: `python build.py`
+Build output directory: `dist`

@@ -1,7 +1,1 @@
-{
-  "name": "kibleyonuhesapla",
-  "compatibility_date": "2026-07-29",
-  "assets": {
-    "directory": "./dist"
-  }
-}
+{"name":"kaza-namazi-hesaplama","compatibility_date":"2026-07-30","assets":{"directory":"./dist"}}
