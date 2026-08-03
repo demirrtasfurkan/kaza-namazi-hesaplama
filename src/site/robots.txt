@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://kazanamazihesaplama.com/sitemap.xml
+
+Sitemap: https://kibleyonuhesapla.com/sitemap.xml
