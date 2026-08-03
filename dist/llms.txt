@@ -3,11 +3,11 @@
 > Ücretsiz, gizlilik odaklı yaklaşık kaza namazı borcu hesaplama ve günlük planlama aracı.
 
 ## Ana sayfalar
-- https://kazanamazihesaplama.com/
-- https://kazanamazihesaplama.com/kadinlar-icin-kaza-namazi-hesaplama/
-- https://kazanamazihesaplama.com/erkekler-icin-kaza-namazi-hesaplama/
-- https://kazanamazihesaplama.com/kaza-namazi-nasil-hesaplanir/
-- https://kazanamazihesaplama.com/kaza-namazi-cizelgesi/
+- https://kazanamazihesapla.com/
+- https://kazanamazihesapla.com/kadinlar-icin-kaza-namazi-hesaplama/
+- https://kazanamazihesapla.com/erkekler-icin-kaza-namazi-hesaplama/
+- https://kazanamazihesapla.com/kaza-namazi-nasil-hesaplanir/
+- https://kazanamazihesapla.com/kaza-namazi-cizelgesi/
 
 ## Yöntem
 Toplam eksik dönemden namazların kılındığı veya namaz yükümlülüğünün bulunmadığı günler çıkarılır. Kalan gün, seçilen vakit sayısıyla çarpılır. Sonuç yaklaşık planlamadır; fetva değildir.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import json, shutil, html
-ROOT=Path(__file__).resolve().parents[1]; SRC=ROOT/'src'; DIST=ROOT/'dist'; DOMAIN='https://kazanamazihesaplama.com'
+ROOT=Path(__file__).resolve().parents[1]; SRC=ROOT/'src'; DIST=ROOT/'dist'; DOMAIN='https://kazanamazihesapla.com'
 def render(t,v):
  for k,x in v.items(): t=t.replace('{{'+k+'}}',str(x))
  return t
