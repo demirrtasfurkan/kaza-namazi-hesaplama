@@ -17,7 +17,7 @@ def main():
  at=(SRC/'templates/article.template.html').read_text(encoding='utf-8'); yt=(SRC/'templates/year.template.html').read_text(encoding='utf-8'); gt=(SRC/'templates/guide-index.template.html').read_text(encoding='utf-8')
  cards=[]; urls=[DOMAIN+'/',DOMAIN+'/gizlilik.html',DOMAIN+'/metodoloji.html',DOMAIN+'/rehber/']
  for p in pages:
-  content=''.join(f'<h2>{html.escape(h)}</h2><p>{html.escape(b)}</p>' for h,b in p['sections'])
+  content=p.get('content_html') or ''.join(f'<h2>{html.escape(h)}</h2><p>{html.escape(b)}</p>' for h,b in p['sections'])
   related=''.join(f'<a href="/{x["slug"]}/">{html.escape(x["title"])}</a>' for x in pages if x['slug']!=p['slug'])
   schema=json.dumps({'@context':'https://schema.org','@type':'Article','headline':p['title'],'description':p['description'],'inLanguage':'tr-TR','mainEntityOfPage':DOMAIN+'/'+p['slug']+'/'},ensure_ascii=False)
   out=render(at,{'TITLE':html.escape(p['title']),'DESCRIPTION':html.escape(p['description']),'SLUG':p['slug'],'H1':html.escape(p['h1']),'INTRO':html.escape(p['intro']),'CONTENT':content,'RELATED':related,'SCHEMA':schema,'FOOTER':footer()})
