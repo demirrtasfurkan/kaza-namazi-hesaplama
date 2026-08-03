@@ -23,7 +23,7 @@ def main():
   out=render(at,{'TITLE':html.escape(p['title']),'DESCRIPTION':html.escape(p['description']),'SLUG':p['slug'],'H1':html.escape(p['h1']),'INTRO':html.escape(p['intro']),'CONTENT':content,'RELATED':related,'SCHEMA':schema,'FOOTER':footer()})
   d=DIST/p['slug']; d.mkdir(); (d/'index.html').write_text(out,encoding='utf-8'); urls.append(DOMAIN+'/'+p['slug']+'/')
   cards.append(f'<a class="guide-card" href="/{p["slug"]}/"><h2>{html.escape(p["title"])}</h2><p>{html.escape(p["description"])}</p></a>')
- years=[1,5,10,15,20,25,30,40]
+ years=[1,5,10,15,20,30]
  for y in years:
   days=round(y*365.2425); prayers=days*5; rakats=days*17
   rel=''.join(f'<a href="/{x}-yillik-kaza-namazi-hesaplama/">{x} yıllık hesaplama</a>' for x in years if x!=y)
@@ -31,6 +31,6 @@ def main():
   vals={'YEAR':y,'DAYS':nf(days),'PRAYERS':nf(prayers),'RAKATS':nf(rakats),'DURATION':duration(prayers/5),'D1':duration(prayers),'D5':duration(prayers/5),'D10':duration(prayers/10),'RELATED':rel,'SCHEMA':schema,'FOOTER':footer()}
   d=DIST/f'{y}-yillik-kaza-namazi-hesaplama'; d.mkdir(); (d/'index.html').write_text(render(yt,vals),encoding='utf-8'); urls.append(f'{DOMAIN}/{y}-yillik-kaza-namazi-hesaplama/')
  d=DIST/'rehber'; d.mkdir(); (d/'index.html').write_text(render(gt,{'CARDS':''.join(cards),'FOOTER':footer()}),encoding='utf-8')
- (DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+'\n'.join(f'<url><loc>{u}</loc></url>' for u in urls)+'\n</urlset>',encoding='utf-8')
+ (DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+'\n'.join(f'<url><loc>{u}</loc><lastmod>2026-08-03</lastmod></url>' for u in urls)+'\n</urlset>',encoding='utf-8')
  print(f'Build tamamlandı: {len(pages)} rehber, {len(years)} yıl sayfası, toplam {len(urls)} URL')
 if __name__=='__main__': main()

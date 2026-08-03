@@ -43,3 +43,12 @@ blockquote{border-left-color:var(--primary);background:#F8FAFC;font-family:var(-
 footer{background:#111827}.footer-grid p,.footer-grid a{color:#9CA3AF}
 .guide-hero{background:linear-gradient(180deg,#FFFFFF,#F8FAFC)}.article-body{box-shadow:var(--shadow)}.article-body p,.article-body li{color:#4B5563}.formula{border-left-color:var(--primary);background:#F0FDFA}
 @media(max-width:600px){h1{font-size:2.65rem}.planner-shell{border-radius:16px}.form-step{padding:22px}.hero{padding-top:46px}}
+
+/* V1.0 Final SEO content components */
+.hero-note{margin-top:18px;font-size:13px;color:var(--muted,#6b7280)}
+.section-head{max-width:760px;margin-bottom:28px}.section-head h2{margin:8px 0 10px}.section-head p{color:var(--muted,#6b7280)}
+.example-grid,.year-links{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.example-grid article,.year-links a{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(15,23,42,.04)}.example-grid article>span{font-size:12px;font-weight:700;color:#0f766e}.example-grid h3{margin:10px 0}.example-grid a,.year-links a span{color:#0f766e;font-weight:600}.year-links a{display:flex;flex-direction:column;gap:8px;text-decoration:none}.year-links strong{font-size:20px;color:#111827}.year-links{grid-template-columns:repeat(3,1fr)}
+.cta-row{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:24px}.source-box{display:flex;flex-direction:column;gap:10px;margin-top:24px;padding:20px;border:1px solid #d1fae5;background:#f0fdfa;border-radius:14px}.source-box a{color:#0f766e}.table-wrap{overflow:auto;margin:20px 0}.tracking-table{width:100%;border-collapse:collapse;background:#fff}.tracking-table th,.tracking-table td{padding:14px;border:1px solid #e5e7eb;text-align:left;min-width:140px}.tracking-table th{background:#f8fafc}.alt{background:#f8fafc}
+.editorial-body h3{margin-top:28px}.editorial-body details{border-bottom:1px solid #e5e7eb;padding:4px 0}.editorial-body summary{cursor:pointer;font-weight:600;padding:18px 0}.editorial-body details p{padding-bottom:16px;margin:0;color:#4b5563}
+@media(max-width:800px){.example-grid,.year-links{grid-template-columns:1fr}.cta-row{align-items:flex-start}.tracking-table th,.tracking-table td{min-width:120px}}
+@media print{header,footer,.hero,.result-actions,.content-section:not(#cizelge),#resultSection[hidden]{display:none!important}#cizelge{display:block!important}.tracking-table td{height:48px}}
