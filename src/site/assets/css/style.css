@@ -88,3 +88,69 @@ footer{background:#111827}.footer-grid p,.footer-grid a{color:#9CA3AF}
 
 /* Rich guide content */
 .article-body{font-size:1rem;line-height:1.78}.article-body h2{margin-top:2.5rem;scroll-margin-top:90px}.article-body h3{margin-top:1.65rem;font-size:1.2rem}.article-body ul,.article-body ol{padding-left:1.35rem;margin:1rem 0}.article-body li{margin:.45rem 0}.article-toc{padding:1.25rem 1.35rem;border:1px solid var(--border,#e5e7eb);border-radius:16px;background:#f8fafc;margin:0 0 2rem}.article-toc ol{margin:.7rem 0 0}.article-toc a{text-decoration:none}.table-wrap{overflow-x:auto;margin:1.25rem 0 1.75rem;border:1px solid #e5e7eb;border-radius:14px}.article-body table{width:100%;border-collapse:collapse;min-width:560px;background:#fff}.article-body th,.article-body td{padding:.85rem 1rem;text-align:left;border-bottom:1px solid #e5e7eb;vertical-align:top}.article-body th{background:#f8fafc;font-weight:700}.article-body tr:last-child td{border-bottom:0}.content-box{padding:1rem 1.15rem;border-radius:14px;margin:1.25rem 0;border-left:4px solid #0f766e;background:#f0fdfa}.content-box.warning{border-left-color:#d97706;background:#fffbeb}.content-box p{margin:.4rem 0 0}.article-faq details{border:1px solid #e5e7eb;border-radius:12px;padding:0 1rem;margin:.7rem 0;background:#fff}.article-faq summary{cursor:pointer;font-weight:700;padding:1rem 0}.article-faq details p{padding:0 0 1rem;margin:0}.article-sources{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid #e5e7eb}.article-sources a{overflow-wrap:anywhere}.formula{line-height:1.65}.sidebar a{display:block;margin:.7rem 0;line-height:1.35}@media(max-width:760px){.article-body{font-size:.97rem}.article-body h2{font-size:1.45rem}.article-toc{padding:1rem}.article-body th,.article-body td{padding:.75rem}.article-layout{gap:2rem}}
+
+/* Mobile layout hotfix — keep this block at the end so theme overrides cannot break it */
+html,body{max-width:100%;overflow-x:hidden}
+.hero-copy,.planner-shell,.form-step,.field,.input-affix{min-width:0}
+
+@media (max-width:900px){
+  .hero{padding:48px 0 64px}
+  .hero-inner{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:34px;
+  }
+  .hero-copy,.planner-shell{width:100%;max-width:none}
+  .hero-copy{order:1}
+  .planner-shell{order:2}
+  .site-header nav,.header-cta{display:none}
+}
+
+@media (max-width:600px){
+  .container,.narrow{width:calc(100% - 28px);max-width:100%}
+  .header-inner{height:68px;gap:12px}
+  .brand{gap:10px;font-size:.92rem;min-width:0}
+  .brand img,.brand-mark{width:34px;height:34px;flex:0 0 34px}
+  .brand span{min-width:0;line-height:1.08}
+  .brand small{font-size:.62rem}
+
+  .hero{padding:38px 0 52px}
+  .hero-inner{gap:28px}
+  .hero-copy{padding:0}
+  .eyebrow{font-size:.68rem;line-height:1.7}
+  h1{font-size:clamp(2.55rem,13vw,3.25rem);line-height:1.02;margin:14px 0 18px;overflow-wrap:anywhere}
+  .lead{font-size:1rem;line-height:1.62;margin-bottom:0}
+  .trust-row{grid-template-columns:1fr;gap:0;margin-top:24px}
+  .trust-row span{padding:10px 0}
+
+  .planner-shell{border-radius:16px;overflow:hidden}
+  .stepper{padding:14px 12px;gap:5px;overflow:hidden}
+  .step{padding:0;flex:0 0 auto}
+  .step span{width:28px;height:28px}
+  .step small{display:none}
+  .stepper i{min-width:12px}
+  .form-step{padding:20px 16px 18px}
+  .form-intro{margin-bottom:18px}
+  .form-intro h2{font-size:1.65rem;line-height:1.08;overflow-wrap:anywhere}
+  .form-intro p{font-size:.92rem}
+
+  .segmented{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:4px}
+  .segmented span{padding:10px 5px;font-size:.78rem;white-space:normal;line-height:1.2}
+  .two-col,.prayer-list,.plan-options{grid-template-columns:1fr}
+  .field input,.field select{min-width:0;font-size:16px}
+  .input-affix{width:100%}
+  .input-affix input{width:100%}
+  .step-actions{flex-direction:column-reverse}
+  .step-actions .btn,.next-step{width:100%}
+
+  .results,.content-section,.faq-section{padding:64px 0}
+  .result-paper{padding:20px 16px}
+  .result-kpis,.breakdown,.related-grid,.year-grid,.guide-grid,.example-grid,.year-links{grid-template-columns:1fr}
+  .plan-card,.result-heading,.split-heading,.result-actions{flex-direction:column;align-items:stretch}
+  .duration-box{text-align:left;min-width:0}
+  .article-body{padding:20px 16px}
+
+  .table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tracking-table{min-width:680px}
+}
