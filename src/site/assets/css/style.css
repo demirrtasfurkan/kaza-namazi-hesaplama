@@ -154,3 +154,82 @@ html,body{max-width:100%;overflow-x:hidden}
   .table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
   .tracking-table{min-width:680px}
 }
+
+
+/* Ana sayfa SSS — genel details kart stillerinden bağımsız, kompakt accordion */
+#sss .editorial-aside{align-self:start}
+#sss .editorial-body{min-width:0}
+#sss .editorial-body>h2{margin:0 0 24px}
+#sss .editorial-body details{
+  margin:0 0 12px;
+  padding:0;
+  border:1px solid var(--line,#e5e7eb);
+  border-radius:14px;
+  background:#fff;
+  box-shadow:none;
+  overflow:hidden;
+}
+#sss .editorial-body details:hover{border-color:#cbd5e1}
+#sss .editorial-body details[open]{border-color:#99f6e4;box-shadow:0 8px 24px rgba(15,23,42,.045)}
+#sss .editorial-body summary{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  width:100%;
+  min-height:68px;
+  padding:18px 56px 18px 22px;
+  cursor:pointer;
+  list-style:none;
+  user-select:none;
+}
+#sss .editorial-body summary::-webkit-details-marker{display:none}
+#sss .editorial-body summary::marker{display:none;content:""}
+#sss .editorial-body summary h3{
+  margin:0;
+  font-size:1rem;
+  line-height:1.45;
+  font-weight:700;
+  letter-spacing:-.015em;
+  color:var(--ink,#111827);
+}
+#sss .faq-icon{
+  position:absolute;
+  right:22px;
+  top:50%;
+  width:20px;
+  height:20px;
+  transform:translateY(-50%);
+  border-radius:50%;
+  background:#f0fdfa;
+}
+#sss .faq-icon::before,#sss .faq-icon::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:10px;
+  height:2px;
+  border-radius:2px;
+  background:var(--primary,#0f766e);
+  transform:translate(-50%,-50%);
+  transition:transform .18s ease;
+}
+#sss .faq-icon::after{transform:translate(-50%,-50%) rotate(90deg)}
+#sss details[open] .faq-icon::after{transform:translate(-50%,-50%) rotate(0)}
+#sss .editorial-body details>p{
+  margin:0;
+  padding:0 56px 20px 22px;
+  color:#4b5563;
+  line-height:1.7;
+}
+@media(max-width:760px){
+  #sss .editorial-grid{display:block}
+  #sss .editorial-aside{margin-bottom:12px}
+  #sss .editorial-body>h2{font-size:1.9rem;margin-bottom:20px}
+  #sss .editorial-body summary{min-height:62px;padding:16px 50px 16px 16px}
+  #sss .editorial-body summary h3{font-size:.98rem}
+  #sss .faq-icon{right:16px}
+  #sss .editorial-body details>p{padding:0 16px 18px;font-size:.95rem}
+}
