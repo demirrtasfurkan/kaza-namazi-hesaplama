@@ -1,0 +1,63 @@
+KAZA NAMAZI HESAPLAMA — İÇERİK PANELİ
+
+1. BU SÜRÜMÜ YAYINLAMA
+
+- ZIP'i açın.
+- İçindeki dosya ve klasörleri GitHub'daki
+  demirrtasfurkan/kaza-namazi-hesaplama reposunun köküne yükleyin.
+- Commit mesajı olarak "İçerik yönetim paneli" yazabilirsiniz.
+- Cloudflare mevcut Git entegrasyonuyla build ve yayını otomatik yapar.
+- Build komutu: python build.py
+- Çıktı klasörü: dist
+
+
+2. İLK GİRİŞ İÇİN GITHUB TOKEN
+
+- GitHub > Settings > Developer settings > Personal access tokens >
+  Fine-grained tokens bölümüne gidin.
+- Token'ın erişimini yalnızca "kaza-namazi-hesaplama" repository'siyle sınırlayın.
+- Repository permissions altında "Contents" iznini Read and write yapın.
+- Oluşan token'ı yalnızca bir kez kopyalayın ve güvenli bir yerde saklayın.
+- Token'ı ZIP'e, GitHub dosyalarına veya ekran görüntülerine eklemeyin.
+
+
+3. PANELİ KULLANMA
+
+- https://kazanamazihesapla.com/admin/ adresini açın.
+- GitHub erişim token'ıyla giriş yapın.
+- "Site İçerikleri" bölümünü seçin.
+- Ana Sayfa veya Rehber Yazıları bölümünü açın.
+- Metni düzenleyip Publish/Yayımla seçeneğine basın.
+- Panel GitHub'a otomatik commit gönderir.
+- Cloudflare değişikliği otomatik olarak build edip yayına alır.
+
+
+4. PANELDEN YÖNETİLEN ALANLAR
+
+Ana Sayfa:
+- SEO başlığı
+- Meta açıklaması
+- Hero üst etiketi
+- H1
+- Giriş metni
+- Gizlilik notu
+- Footer açıklaması
+- SSS başlığı, soruları ve cevapları
+
+Rehber Yazıları:
+- URL slug
+- SEO başlığı
+- Meta açıklaması
+- H1
+- Giriş özeti
+- Zengin metin makale içeriği
+- SSS soruları ve cevapları
+- Kaynak bağlantıları ve kaynak notu
+
+
+5. ÖNEMLİ NOTLAR
+
+- Yayındaki bir yazının URL slug alanını zorunlu olmadıkça değiştirmeyin.
+- Makale metni içinde H1 kullanmayın. Ana bölümler H2, alt bölümler H3 olmalıdır.
+- Düzenleme sırasında token'ı başka bir kişiye göndermeyin.
+- Bir değişikliği geri almak gerekirse GitHub commit geçmişi kullanılabilir.

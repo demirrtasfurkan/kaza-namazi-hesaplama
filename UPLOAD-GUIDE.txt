@@ -3,7 +3,6 @@ GITHUB'A YÜKLEME
 Bu pakette 100'den az dosya vardır. ZIP'i ayıklayıp aşağıdaki öğeleri
 GitHub reposunun köküne birlikte yükleyin:
 
-.github
 src
 scripts
 .gitignore
@@ -11,11 +10,12 @@ build.py
 wrangler.jsonc
 README.md
 UPLOAD-GUIDE.txt
+CMS-KULLANIM-REHBERI.txt
 
 GitHub'a dist klasörü yüklenmeyecek. Zaten pakette bulunmaz.
 
 Commit mesajı:
-Release v8 Cloudflare build architecture
+İçerik yönetim paneli ve otomatik yayın akışı
 
 
 CLOUDFLARE AYARI
@@ -39,8 +39,7 @@ wrangler.jsonc de ./dist klasörünü yayınlar.
 İLK TEST URL'LERİ
 
 /
-sehirler/
-istanbul-kible-yonu/
-ankara-kible-yonu/
-hakkari-kible-yonu/
+/admin/
+/rehber/
+/kaza-namazi-nasil-kilinir/
 sitemap.xml
