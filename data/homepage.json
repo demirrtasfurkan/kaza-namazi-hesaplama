@@ -1,0 +1,72 @@
+{
+  "seo_title": "Kaza Namazı Hesaplama Aracı – Namaz Borcu ve Günlük Program",
+  "meta_description": "Kaza namazı hesaplama aracıyla geçmiş namaz borcunuzu yıl, gün veya tarih aralığına göre hesaplayın; vakit, rekât ve günlük bitirme programınızı görün.",
+  "hero_eyebrow": "ÜCRETSİZ · GİZLİLİK ODAKLI · OTOMATİK",
+  "h1": "Kaza Namazı Hesaplama",
+  "hero_lead": "Geçmiş kaza namazı borcunuzu yıl, gün veya tarih aralığına göre otomatik hesaplayın. Toplam vakit ve rekât sayısını görün, size uygun günlük kaza namazı programını oluşturun.",
+  "privacy_note": "Kişisel bilgileriniz tarayıcınızdan çıkmaz.",
+  "footer_description": "Yaklaşık borç hesabı ve sürdürülebilir günlük plan oluşturma aracı.",
+  "faq_heading": "Kaza namazı hakkında merak edilenler",
+  "faqs": [
+    {
+      "question": "Kaza namazı nedir?",
+      "answer": "Kaza namazı, vaktinde kılınamayan farz namazın daha sonra kılınmasıdır. Hesaplama aracı kullanıcının belirttiği eksik dönem üzerinden yaklaşık bir borç ve günlük tamamlama planı oluşturur."
+    },
+    {
+      "question": "Kaza namazı nasıl hesaplanır?",
+      "answer": "Toplam yükümlülük dönemindeki gün sayısından namazların kılındığı veya kişinin namazla yükümlü olmadığı günler çıkarılır, Kalan gün sayısı hesaba dahil edilen vakit sayısıyla çarpılır."
+    },
+    {
+      "question": "Kaza namazı hesaplama yaşı kaçtır?",
+      "answer": "Başlangıç yaşı kişiye ve ergenlik tarihine göre değişir. Araç otomatik bir yaş varsaymak yerine kullanıcının eksik yıl, gün veya tarih aralığını girmesini sağlar."
+    },
+    {
+      "question": "Kadınlarda kaza namazı nasıl hesaplanır?",
+      "answer": "Hayız ve lohusalık gibi namaz yükümlülüğünün bulunmadığı günler toplam dönemden düşülür. Kişisel dönemler farklı olduğundan sabit bir ortalama yerine mümkün olduğunca gerçekçi toplam gün girilmelidir."
+    },
+    {
+      "question": "Erkeklerde kaza namazı nasıl hesaplanır?",
+      "answer": "Namaz yükümlülüğünün başladığı dönem ile düzenli namaza başlanan dönem arasındaki eksik günler belirlenir ve kılınan günler düşülerek seçilen vakitler üzerinden yaklaşık toplam hesaplanır."
+    },
+    {
+      "question": "10 yıllık kaza namazı nasıl hesaplanır?",
+      "answer": "10 yıl yaklaşık 3.652 gün kabul edilir. Beş farz vakit üzerinden yaklaşık 18.260 vakit ve 62.084 rekat çıkar; kılınan veya muaf olunan günler bu toplamdan düşülmelidir."
+    },
+    {
+      "question": "1 yıllık namaz borcu kaç rekâttır?",
+      "answer": "Bir yıl yaklaşık 365 gün kabul edildiğinde beş farz namaz toplamı yaklaşık 1.825 vakit ve 6.205 rekattır. Artık yıl ve kişisel eksik günler sonucu değiştirebilir."
+    },
+    {
+      "question": "12 günde 1 yıllık namaz borcu ödenebilir mi?",
+      "answer": "Bir yıllık beş vakit borcu yaklaşık 1.825 vakittir. 12 günde tamamlamak için günde yaklaşık 153 kaza vakti gerekir; bu yalnızca matematiksel bir sonuçtur ve sürdürülebilir bir plan olmayabilir."
+    },
+    {
+      "question": "Kaza namazı nasıl kılınır?",
+      "answer": "Kazası kılınacak farz namaz, kendi farz rekat sayısına göre kılınır: sabah 2, öğle 4, ikindi 4, akşam 3 ve yatsı 4 rekattır."
+    },
+    {
+      "question": "Vitir hesaba dahil edilir mi?",
+      "answer": "Diyanet'in Hanefi yaklaşımında vitrin kazası gerektiği belirtilir diğer mezheplerde değerlendirme farklı olabilir. Bu nedenle araçta vitir isteğe bağlıdır."
+    },
+    {
+      "question": "Diyanet kaza namazı hesaplama aracı sunuyor mu?",
+      "answer": "Bu site Diyanet'e ait değildir. Araç, Diyanet'in yayımladığı genel bilgilerden de yararlanarak yaklaşık matematiksel plan sunar; resmi fetva veya kişisel dini danışmanlık yerine geçmez."
+    },
+    {
+      "question": "Kaza namazı ne zaman kılınır?",
+      "answer": "Diyanet'e göre kaza namazları kerahat vakitleri dışında kılınabilir. Kişinin mezhebine ve özel durumuna göre ayrıntılar için yetkin bir dini kaynağa danışılması uygundur."
+    },
+    {
+      "question": "Günde kaç kaza namazı kılınmalıdır?",
+      "answer": "Herkes için zorunlu tek bir günlük sayı yoktur. Araç 1, 5 ve 10 vakitlik örnek planlar ile özel hedef sunarken sürdürülebilir bir hedef seçmek önemlidir."
+    },
+    {
+      "question": "Kaza namazı çizelgesi nasıl kullanılır?",
+      "answer": "Günlük hedef ve tamamlanan vakitler tabloya işaretlenir. Haftalık toplam üzerinden ilerlemek tek tek günlere göre daha esnek takip sağlar."
+    },
+    {
+      "question": "Hesaplama sonucu kesin midir?",
+      "answer": "Hayır. Sonuç, girilen dönem ve düşülecek günlere bağlı yaklaşık bir planlama sonucudur. Kesin tarih bilinmiyorsa ihtiyatlı bir tahmin kullanılmalıdır."
+    }
+  ]
+}
