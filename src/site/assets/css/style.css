@@ -102,8 +102,11 @@ html,body{max-width:100%;overflow-x:hidden}
     gap:34px;
   }
   .hero-copy,.planner-shell{width:100%;max-width:none}
-  .hero-copy{order:1}
-  .planner-shell{order:2}
+  .planner-shell{margin-top:0}
+  .hero-copy{margin-top:2px}
+  /* Tool-first mobile UX: keep DOM order for SEO, change only visual order */
+  .planner-shell{order:1}
+  .hero-copy{order:2}
   .site-header nav,.header-cta{display:none}
 }
 
