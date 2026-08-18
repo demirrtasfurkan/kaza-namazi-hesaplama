@@ -61,3 +61,30 @@ Rehber Yazıları:
 - Makale metni içinde H1 kullanmayın. Ana bölümler H2, alt bölümler H3 olmalıdır.
 - Düzenleme sırasında token'ı başka bir kişiye göndermeyin.
 - Bir değişikliği geri almak gerekirse GitHub commit geçmişi kullanılabilir.
+
+============================================================
+İÇERİK İÇİ LİNK EKLEME
+============================================================
+
+Rehber Yazıları > Makale İçeriği alanı rich-text editördür.
+
+1. Link vermek istediğiniz kelime veya kelime grubunu seçin.
+2. Editör araç çubuğundaki zincir / Link ikonuna tıklayın.
+3. Site içi linklerde tam domain yerine mümkünse relative URL kullanın:
+   /kaza-namazi-bitirme-plani/
+   /10-yillik-kaza-namazi-hesaplama/
+4. Linki kaydedin ve içeriği yayınlayın.
+5. Bir linki kaldırmak için linkli metni seçip link aracından bağlantıyı kaldırın.
+
+SEO önerisi:
+- Anchor text hedef sayfayı açıklasın.
+- "buraya tıklayın" gibi belirsiz anchor'lardan kaçının.
+- Aynı paragrafta gereksiz sayıda link kullanmayın.
+- İç linklerde yeni sekme açılması gerekmez.
+
+Ana Sayfa SSS ve rehber SSS cevapları da rich-text olarak ayarlanmıştır;
+bu alanlarda da aynı yöntemle link ekleyebilirsiniz.
+
+Not: Raw moduna geçildiğinde toolbar butonları pasif olabilir. Link eklemek için
+Rich Text modunu kullanın. Raw modda elle Markdown da yazabilirsiniz:
+[kaza namazı bitirme planı](/kaza-namazi-bitirme-plani/)
