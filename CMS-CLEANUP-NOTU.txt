@@ -1,0 +1,16 @@
+CMS cleanup sürümü
+
+Değişen dosyalar:
+- src/data/homepage.json
+- src/site/admin/config.yml
+- scripts/generate.py
+
+Yapılanlar:
+1) Basic tool ile uyuşmayan eski hero_eyebrow ve hero_lead CMS alanları kaldırıldı.
+2) Ana sayfa SEO title/meta ve footer açıklaması güncel basic tool akışına göre güncellendi.
+3) Ana sayfa SSS rich-text cevapları artık Markdown olarak render ediliyor; CMS'ten eklenen iç linkler canlı sayfada gerçek <a> linkine dönüşüyor.
+4) FAQ schema için rich-text cevaplardan düz metin üretiliyor; Markdown link sözdizimi schema'ya taşınmıyor.
+5) SSS metinlerindeki bazı eski tool ifadeleri ve yazım hataları temizlenmiştir.
+
+Not:
+- blog.json ve cities.json kıble projesinden kalma dosyalardır. Kaza namazı CMS config'i bunları kullanmıyor. Repoda durmaları build'i bozmaz ancak temizlik için daha sonra silinebilirler.

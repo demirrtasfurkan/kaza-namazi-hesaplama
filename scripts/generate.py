@@ -38,10 +38,10 @@ def update_homepage(home):
  replace(r'<title>.*?</title>','<title>'+html.escape(home['seo_title'])+'</title>')
  replace(r'<meta name="description" content="[^"]*">','<meta name="description" content="'+html.escape(home['meta_description'],quote=True)+'">')
  replace(r'(<section class="hero[^"]*".*?<h1>).*?(</h1>)',r'\g<1>'+html.escape(home['h1'])+r'\g<2>')
- faq_items=''.join('<details><summary><h3>'+html.escape(x['question'])+'</h3><span class="faq-icon" aria-hidden="true"></span></summary><p>'+html.escape(x['answer'])+'</p></details>' for x in home.get('faqs',[]))
+ faq_items=''.join('<details><summary><h3>'+html.escape(x['question'])+'</h3><span class="faq-icon" aria-hidden="true"></span></summary>'+render_markdown(x.get('answer',''),include_toc=False)+'</details>' for x in home.get('faqs',[]))
  faq_section='<section class="content-section" id="sss"><div class="container content-wide"><div class="editorial-body"><h2>'+html.escape(home['faq_heading'])+'</h2>'+faq_items+'</div></div></section>'
  replace(r'<section class="content-section" id="sss">.*?</section>',faq_section)
- faq_schema=json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':x['question'],'acceptedAnswer':{'@type':'Answer','text':x['answer']}} for x in home.get('faqs',[])]},ensure_ascii=False)
+ faq_schema=json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':x['question'],'acceptedAnswer':{'@type':'Answer','text':re.sub(r'\[([^\]]+)\]\([^\)]+\)',r'\1',re.sub(r'[*_`>#]','',x.get('answer',''))).strip()}} for x in home.get('faqs',[])]},ensure_ascii=False)
  replace(r'<script type="application/ld\+json">\{[^\n]*?"FAQPage"[^\n]*?</script>','<script type="application/ld+json">'+faq_schema+'</script>')
  replace(r'(<a class="brand footer-brand".*?</a><p>).*?(</p>)',r'\g<1>'+html.escape(home['footer_description'])+r'\g<2>')
  path.write_text(text,encoding='utf-8')

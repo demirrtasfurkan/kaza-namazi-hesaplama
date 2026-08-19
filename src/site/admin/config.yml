@@ -31,14 +31,12 @@ collections:
         fields:
           - {name: seo_title, label: SEO Başlığı, widget: string}
           - {name: meta_description, label: Meta Açıklaması, widget: text}
-          - {name: hero_eyebrow, label: Üst Etiket, widget: string}
           - {name: h1, label: Ana Başlık (H1), widget: string}
-          - {name: hero_lead, label: Giriş Metni, widget: text}
           - {name: privacy_note, label: Gizlilik Notu, widget: string}
           - {name: footer_description, label: Footer Açıklaması, widget: text}
           - {name: faq_heading, label: SSS Başlığı, widget: string}
           - name: faqs
-            label: Ana Sayfa Sık Sorulan Sorular
+            label: Ana Sayfa Sıkça Sorulan Sorular
             widget: list
             summary: "{{fields.question}}"
             fields:
@@ -46,7 +44,7 @@ collections:
               - name: answer
                 label: Cevap
                 widget: richtext
-                hint: "Cevap içinde link eklemek için metni seçip zincir ikonunu kullanabilirsiniz."
+                hint: "Cevap içinde link eklemek için metni seçin → zincir ikonuna tıklayın → /hedef-sayfa/ biçiminde URL girin."
 
       - name: guides
         label: Rehber Yazıları

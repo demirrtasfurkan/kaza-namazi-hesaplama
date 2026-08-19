@@ -1,20 +1,18 @@
 {
-  "seo_title": "Kaza Namazı Hesaplama – Namaz Borcunu ve Bitirme Planını Hesapla",
-  "meta_description": "Kaza namazı borcunuzu yaklaşık olarak hesaplayın. Vakit dağılımını görün, günlük hedefinizi seçin ve tahmini bitiş tarihinizi oluşturun.",
-  "hero_eyebrow": "ÜCRETSİZ · GİZLİLİK ODAKLI · OTOMATİK",
+  "seo_title": "Kaza Namazı Hesaplama – Namaz Borcunu Hesapla",
+  "meta_description": "Doğum ve buluğ çağı tarihlerinizi, namaz kıldığınız yıl ve ay süresini girerek yaklaşık kaza namazı borcunuzu vakit bazında hesaplayın.",
   "h1": "Kaza Namazı Hesaplama",
-  "hero_lead": "Geçmiş kaza namazı borcunuzu yıl, gün veya tarih aralığına göre yaklaşık hesaplayın; vakit dağılımını ve günlük bitirme planınızı görün.",
   "privacy_note": "Kişisel bilgileriniz tarayıcınızdan çıkmaz.",
-  "footer_description": "Yaklaşık borç hesabı ve sürdürülebilir günlük plan oluşturma aracı.",
+  "footer_description": "Kaza namazı borcunuzu vakit bazında yaklaşık hesaplamanıza yardımcı olan ücretsiz hesaplama aracı.",
   "faq_heading": "Sıkça Sorulan Sorular",
   "faqs": [
     {
       "question": "Kaza namazı nedir?",
-      "answer": "Kaza namazı, vaktinde kılınamayan farz namazın daha sonra kılınmasıdır. Hesaplama aracı kullanıcının belirttiği eksik dönem üzerinden yaklaşık bir borç ve günlük tamamlama planı oluşturur."
+      "answer": "Kaza namazı, vaktinde kılınamayan farz namazın daha sonra kılınmasıdır. Hesaplama aracı; doğum ve buluğ çağı tarihleri, namaz kılınan süre ve seçilen vakitler üzerinden yaklaşık bir kaza namazı borcu hesaplar."
     },
     {
       "question": "Kaza namazı nasıl hesaplanır?",
-      "answer": "Toplam yükümlülük dönemindeki gün sayısından namazların kılındığı veya kişinin namazla yükümlü olmadığı günler çıkarılır, Kalan gün sayısı hesaba dahil edilen vakit sayısıyla çarpılır."
+      "answer": "Namaz yükümlülüğünün başladığı kabul edilen tarihten bugüne kadar geçen süre belirlenir. Bu süreden namaz kıldığınız yıl ve aylar düşülür; kalan dönem, hesaplamaya dahil ettiğiniz vakitler üzerinden yaklaşık olarak hesaplanır."
     },
     {
       "question": "Kaza namazı hesaplama yaşı kaçtır?",
@@ -22,11 +20,11 @@
     },
     {
       "question": "Kadınlarda kaza namazı nasıl hesaplanır?",
-      "answer": "[Kadınlarda kaza namazı hesaplama](/kadinlar-icin-kaza-namazi-hesaplama/) hayız ve lohusalık gibi namaz yükümlülüğünün bulunmadığı günler toplam dönemden düşülür. Kişisel dönemler farklı olduğundan sabit bir ortalama yerine mümkün olduğunca gerçekçi toplam gün girilmelidir."
+      "answer": "[Kadınlarda kaza namazı hesaplama](/kadinlar-icin-kaza-namazi-hesaplama/) kişisel yükümlülük dönemine göre yapılır. Hayız ve lohusalık gibi namaz yükümlülüğünün bulunmadığı dönemler ayrıca değerlendirilmelidir."
     },
     {
       "question": "Erkeklerde kaza namazı nasıl hesaplanır?",
-      "answer": "[Erkekler için kaza namazı hesaplama](/erkekler-icin-kaza-namazi-hesaplama/) namaz yükümlülüğünün başladığı dönem ile düzenli namaza başlanan dönem arasındaki eksik günler belirlenir kılınan günler düşülerek seçilen vakitler üzerinden yaklaşık toplam hesaplanır."
+      "answer": "[Erkekler için kaza namazı hesaplama](/erkekler-icin-kaza-namazi-hesaplama/) buluğ çağıyla başlayan yükümlülük dönemi üzerinden yapılır. Namaz kılınan yıl ve aylar toplam süreden düşülerek seçilen vakitler için yaklaşık borç hesaplanır."
     },
     {
       "question": "10 yıllık kaza namazı nasıl hesaplanır?",
@@ -34,7 +32,7 @@
     },
     {
       "question": "1 yıllık namaz borcu kaç rekâttır?",
-      "answer": "Bir yıl yaklaşık 365 gün kabul edildiğinde [1 yıllık kaza namazı ](/1-yillik-kaza-namazi-hesaplama/)toplamı yaklaşık 1.825 vakit ve 6.205 rekattır. Artık yıl ve kişisel eksik günler sonucu değiştirebilir."
+      "answer": "Bir yıl yaklaşık 365 gün kabul edildiğinde [1 yıllık kaza namazı hesaplama](/1-yillik-kaza-namazi-hesaplama/) için beş farz vakit toplamı yaklaşık 1.825 vakit ve 6.205 rekâttır. Artık yıl ve kişisel durumlar sonucu değiştirebilir."
     },
     {
       "question": "12 günde 1 yıllık namaz borcu ödenebilir mi?",
@@ -42,11 +40,11 @@
     },
     {
       "question": "Kaza namazı nasıl kılınır?",
-      "answer": "Kazası kılınacak farz namaz, kendi farz rekat sayısına göre kılınır: sabah 2, öğle 4, ikindi 4, akşam 3 ve yatsı 4 rekattır. Daha detaylı bilgi almak için [kaza namazı nasıl kılınır ](/kaza-namazi-nasil-kilinir/)blog yazımızı inceleyebilirsini."
+      "answer": "Kazası kılınacak farz namaz, kendi farz rekât sayısına göre kılınır: sabah 2, öğle 4, ikindi 4, akşam 3 ve yatsı 4 rekâttır. Ayrıntılar için [kaza namazı nasıl kılınır](/kaza-namazi-nasil-kilinir/) rehberini inceleyebilirsiniz."
     },
     {
       "question": "Vitir hesaba dahil edilir mi?",
-      "answer": "Diyanet'in Hanefi yaklaşımında vitrin kazası gerektiği belirtilir diğer mezheplerde değerlendirme farklı olabilir. Bu nedenle araçta vitir isteğe bağlıdır."
+      "answer": "Diyanet'in Hanefî yaklaşımında vitir namazının kazası gerektiği belirtilir; diğer mezheplerde değerlendirme farklı olabilir. Bu nedenle araçta vitir ayrı bir seçenek olarak sunulur."
     },
     {
       "question": "Diyanet kaza namazı hesaplama aracı sunuyor mu?",
@@ -58,7 +56,7 @@
     },
     {
       "question": "Günde kaç kaza namazı kılınmalıdır?",
-      "answer": "Herkes için zorunlu tek bir günlük sayı yoktur. Hesaplama sonucu toplam kaza vakti miktarını gösterir; günlük tamamlama planı kişinin imkânına ve sürdürülebilirliğine göre ayrıca belirlenebilir."
+      "answer": "Herkes için zorunlu tek bir günlük sayı yoktur. Araç yaklaşık toplam kaza vakti miktarını gösterir; günlük uygulama planı kişinin imkânına ve sürdürülebilirliğine göre ayrıca belirlenebilir."
     },
     {
       "question": "Kaza namazı çizelgesi nasıl kullanılır?",
