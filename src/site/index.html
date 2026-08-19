@@ -17,10 +17,61 @@
 <header class="site-header"><div class="container header-inner"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">◆</span><span>Kaza Namazı<br><small>Hesaplama</small></span></a><nav><a href="#hesapla">Hesapla</a><a href="#ornekler">Örnekler</a><a href="/rehber/">Rehber</a><a href="#sss">SSS</a></nav><a class="header-cta" href="#hesapla">Hemen hesapla</a></div></header>
 <main>
 <section class="hero" id="hesapla"><div class="container hero-inner"><div class="hero-copy"><span class="eyebrow">ÜCRETSİZ · GİZLİLİK ODAKLI · OTOMATİK</span><h1>Kaza Namazı Hesaplama</h1><p class="lead">Geçmiş kaza namazı borcunuzu yıl, gün veya tarih aralığına göre yaklaşık hesaplayın; vakit dağılımını ve günlük bitirme planınızı görün.</p><div class="trust-row"><span><b>01</b> Dönemi gir</span><span><b>02</b> Vakitleri seç</span><span><b>03</b> Planı oluştur</span></div><p class="hero-note">Kişisel bilgileriniz tarayıcınızdan çıkmaz.</p></div>
-<article class="planner-shell"><div class="stepper" aria-label="Hesaplama adımları"><button class="step is-active" type="button" data-step-target="1"><span>1</span><small>Dönem</small></button><i></i><button class="step" type="button" data-step-target="2"><span>2</span><small>Vakitler</small></button><i></i><button class="step" type="button" data-step-target="3"><span>3</span><small>Plan</small></button></div>
-<form id="calculatorForm"><section class="form-step is-active" data-step="1"><div class="form-intro"><span class="mini-label">ADIM 1</span><h2>Eksik dönemi belirleyin</h2><p>Kesin tarih bilinmiyorsa yaklaşık yıl veya gün girebilirsiniz.</p></div><div class="segmented"><label><input type="radio" name="methodChoice" value="years" checked><span>Yıl</span></label><label><input type="radio" name="methodChoice" value="days"><span>Gün</span></label><label><input type="radio" name="methodChoice" value="dates"><span>Tarih aralığı</span></label></div><select id="method" hidden><option value="years">Yıl</option><option value="days">Gün</option><option value="dates">Tarih</option></select><div id="yearsFields" class="method-fields"><div class="field feature-field"><label for="years">Tahmini eksik yıl</label><div class="input-affix"><input id="years" type="number" min="0" max="100" step="0.1" value="10" inputmode="decimal"><span>yıl</span></div></div></div><div id="daysFields" class="method-fields" hidden><div class="field feature-field"><label for="days">Tahmini eksik gün</label><div class="input-affix"><input id="days" type="number" min="0" max="36500" value="3650" inputmode="numeric"><span>gün</span></div></div></div><div id="dateFields" class="method-fields two-col" hidden><div class="field"><label for="startDate">Başlangıç tarihi</label><input id="startDate" type="date"></div><div class="field"><label for="endDate">Bitiş tarihi</label><input id="endDate" type="date"></div></div><div class="field"><label for="excludedDays">Kılınan veya muaf olunan günler</label><div class="input-affix"><input id="excludedDays" type="number" min="0" value="0" inputmode="numeric"><span>gün</span></div><small>Namaz kıldığınız ve namazla yükümlü olmadığınız günlerin toplamı dönemden düşülür.</small></div><button class="btn btn-primary full next-step" type="button" data-next="2">Vakitleri seç →</button></section>
-<section class="form-step" data-step="2"><div class="form-intro"><span class="mini-label">ADIM 2</span><h2>Vakitleri seçin</h2><p>Beş farz vakit varsayılan olarak seçilidir. Vitir isteğe bağlıdır.</p></div><fieldset><legend class="sr-only">Vakit seçimi</legend><div class="prayer-list"><label><input type="checkbox" name="prayer" value="fajr" checked><span class="check-ui"></span><b>Sabah</b><small>2 rekât</small></label><label><input type="checkbox" name="prayer" value="dhuhr" checked><span class="check-ui"></span><b>Öğle</b><small>4 rekât</small></label><label><input type="checkbox" name="prayer" value="asr" checked><span class="check-ui"></span><b>İkindi</b><small>4 rekât</small></label><label><input type="checkbox" name="prayer" value="maghrib" checked><span class="check-ui"></span><b>Akşam</b><small>3 rekât</small></label><label><input type="checkbox" name="prayer" value="isha" checked><span class="check-ui"></span><b>Yatsı</b><small>4 rekât</small></label><label><input type="checkbox" name="prayer" value="witr" ><span class="check-ui"></span><b>Vitir</b><small>3 rekât</small></label></div></fieldset><div class="step-actions"><button class="btn btn-ghost prev-step" type="button" data-prev="1">← Geri</button><button class="btn btn-primary next-step" type="button" data-next="3">Planı belirle →</button></div></section>
-<section class="form-step" data-step="3"><div class="form-intro"><span class="mini-label">ADIM 3</span><h2>Günlük hedefi belirleyin</h2><p>Sürdürebileceğiniz bir hedef seçin.</p></div><div class="plan-options"><label><input type="radio" name="targetPreset" value="1"><span><b>Rahat</b><small>Günde 1 vakit</small></span></label><label><input type="radio" name="targetPreset" value="5" checked><span><b>Dengeli</b><small>Günde 5 vakit</small></span></label><label><input type="radio" name="targetPreset" value="10"><span><b>Hızlı</b><small>Günde 10 vakit</small></span></label></div><div class="field"><label for="dailyTarget">Özel günlük hedef</label><div class="input-affix"><input id="dailyTarget" type="number" min="1" max="500" value="5" inputmode="numeric"><span>vakit</span></div></div><div class="step-actions"><button class="btn btn-ghost prev-step" type="button" data-prev="2">← Geri</button><button class="btn btn-primary" type="submit">Planımı oluştur</button></div><p class="form-note">Araç fetva vermez; girdiğiniz bilgilere göre yaklaşık matematiksel plan oluşturur.</p></section></form></article></div></section>
+<article class="planner-shell calculator-simple">
+<form id="calculatorForm" class="calculator-simple-form">
+  <div class="calculator-simple-head">
+    <span class="mini-label">HESAPLAMA ARACI</span>
+    <h2>Namaz Borcu Hesaplama Aracı</h2>
+    <p>Eksik döneminizi seçin, vakitleri belirleyin ve yaklaşık bitirme planınızı oluşturun.</p>
+  </div>
+
+  <div class="field simple-method-field">
+    <label>Hesaplama yöntemi</label>
+    <div class="segmented simple-segmented">
+      <label><input type="radio" name="methodChoice" value="years" checked><span>Yıl</span></label>
+      <label><input type="radio" name="methodChoice" value="days"><span>Gün</span></label>
+      <label><input type="radio" name="methodChoice" value="dates"><span>Tarih Aralığı</span></label>
+    </div>
+    <select id="method" hidden><option value="years">Yıl</option><option value="days">Gün</option><option value="dates">Tarih</option></select>
+  </div>
+
+  <div id="yearsFields" class="method-fields">
+    <div class="field"><label for="years">Kaç yıllık kaza namazı borcunuz var?</label><div class="input-affix"><input id="years" type="number" min="0" max="100" step="0.1" value="10" inputmode="decimal"><span>yıl</span></div></div>
+  </div>
+  <div id="daysFields" class="method-fields" hidden>
+    <div class="field"><label for="days">Tahmini eksik gün sayısı</label><div class="input-affix"><input id="days" type="number" min="0" max="36500" value="3650" inputmode="numeric"><span>gün</span></div></div>
+  </div>
+  <div id="dateFields" class="method-fields two-col" hidden>
+    <div class="field"><label for="startDate">Başlangıç tarihi</label><input id="startDate" type="date"></div>
+    <div class="field"><label for="endDate">Bitiş tarihi</label><input id="endDate" type="date"></div>
+  </div>
+
+  <details class="simple-advanced">
+    <summary>Gelişmiş hesaplama ayarları</summary>
+    <div class="field"><label for="excludedDays">Kılınan veya muaf olunan günler</label><div class="input-affix"><input id="excludedDays" type="number" min="0" value="0" inputmode="numeric"><span>gün</span></div><small>Namaz kıldığınız veya namazla yükümlü olmadığınız günleri toplam dönemden düşebilirsiniz.</small></div>
+  </details>
+
+  <fieldset class="simple-prayers"><legend>Hesaplamaya dahil edilecek vakitler</legend>
+    <div class="prayer-list simple-prayer-list">
+      <label><input type="checkbox" name="prayer" value="fajr" checked><span class="check-ui"></span><b>Sabah</b><small>2 rekât</small></label>
+      <label><input type="checkbox" name="prayer" value="dhuhr" checked><span class="check-ui"></span><b>Öğle</b><small>4 rekât</small></label>
+      <label><input type="checkbox" name="prayer" value="asr" checked><span class="check-ui"></span><b>İkindi</b><small>4 rekât</small></label>
+      <label><input type="checkbox" name="prayer" value="maghrib" checked><span class="check-ui"></span><b>Akşam</b><small>3 rekât</small></label>
+      <label><input type="checkbox" name="prayer" value="isha" checked><span class="check-ui"></span><b>Yatsı</b><small>4 rekât</small></label>
+      <label><input type="checkbox" name="prayer" value="witr"><span class="check-ui"></span><b>Vitir</b><small>3 rekât</small></label>
+    </div>
+  </fieldset>
+
+  <div class="simple-plan-row">
+    <div class="field"><label for="dailyTarget">Günlük hedef</label><div class="input-affix"><input id="dailyTarget" type="number" min="1" max="500" value="5" inputmode="numeric"><span>vakit</span></div></div>
+    <div class="quick-targets" aria-label="Hazır günlük hedefler">
+      <button type="button" data-target="1">1</button><button type="button" data-target="5" class="is-active">5</button><button type="button" data-target="10">10</button>
+    </div>
+  </div>
+
+  <button class="btn btn-primary full simple-submit" type="submit">Kaza Namazını Hesapla</button>
+  <p class="form-note">Bu araç fetva vermez; girdiğiniz bilgilere göre yaklaşık matematiksel plan oluşturur.</p>
+</form></article></div></section>
 <section id="resultSection" class="results" hidden><div class="container result-wrap"><div class="result-heading"><div><span class="section-label">HESAPLAMA SONUCU</span><h2>Kişisel kaza namazı planınız</h2><p id="resultSummary"></p></div></div><div class="result-paper"><div class="result-kpis"><article><span>Eksik gün</span><strong id="totalDays">0</strong></article><article><span>Toplam vakit</span><strong id="totalPrayers">0</strong></article><article><span>Toplam rekât</span><strong id="totalRakats">0</strong></article><article class="accent-kpi"><span>Tahmini bitiş</span><strong id="finishDate">—</strong></article></div><div id="prayerBreakdown" class="breakdown"></div><div class="plan-card"><div><span class="section-label">GÜNLÜK PLAN</span><h3 id="planTitle">Günde 5 vakitlik plan</h3><p id="planDescription"></p></div><div class="duration-box"><span id="durationText">—</span><small>Teorik tamamlanma süresi</small></div></div></div><div class="result-actions"><button id="printButton" class="btn btn-secondary" type="button">Yazdır</button><button id="copyButton" class="btn btn-secondary" type="button">Sonucu kopyala</button><a class="text-link" href="/kaza-namazi-cizelgesi/">Takip çizelgesini incele →</a></div></div></section>
 <section class="content-section"><div class="container editorial-grid"><div class="editorial-aside"><span class="section-label">KISA CEVAP</span><p>Aracın çalışma mantığı</p></div><div class="editorial-body"><h2>Kaza namazı nasıl hesaplanır?</h2><p>Kaza namazı hesabında önce namaz yükümlülüğünün bulunduğu fakat namazların eksik kaldığı toplam dönem belirlenir. Bu dönemden namazların kılındığı veya kişinin namazla yükümlü olmadığı günler çıkarılır. Kalan gün sayısı, hesaba dahil edilen vakitlerle çarpılarak yaklaşık borç bulunur.</p><blockquote>Toplam dönem − kılınan veya muaf olunan günler = tahmini eksik gün</blockquote><p>Bir günlük beş farz namaz toplam 5 vakit ve 17 rekâttır. Vitir, mezhepsel yaklaşıma göre ayrıca eklenebilir.</p><div class="cta-row"><a class="btn btn-primary" href="#hesapla">Kaza namazını hesapla</a><a class="text-link" href="/kaza-namazi-nasil-hesaplanir/">Detaylı metodolojiyi oku →</a></div></div></div></section>
 <section class="content-section alt" id="ornekler"><div class="container"><div class="section-head"><span class="section-label">ÖRNEK HESAPLAMALAR</span><h2>Yıl ve duruma göre örnekler</h2></div><div class="example-grid"><article><span>Örnek 1</span><h3>1 yıllık kaza namazı</h3><p>Yaklaşık 365 gün, 1.825 farz vakit ve 6.205 rekât eder. Günde 5 vakitlik hedefle teorik süre yaklaşık 1 yıldır.</p><a href="/1-yillik-kaza-namazi-hesaplama/">1 yıllık hesabı incele →</a></article><article><span>Örnek 2</span><h3>10 yıllık kaza namazı</h3><p>Yaklaşık 3.652 gün, 18.260 farz vakit ve 62.084 rekât eder. Kılınan veya muaf olunan günler ayrıca düşülür.</p><a href="/10-yillik-kaza-namazi-hesaplama/">10 yıllık hesabı incele →</a></article><article><span>Örnek 3</span><h3>Kadınlarda hesaplama</h3><p>Hayız ve lohusalık gibi namaz yükümlülüğünün bulunmadığı günler borca dahil edilmez; kişisel toplam muafiyet günü dönemden düşülür.</p><a href="/kadinlar-icin-kaza-namazi-hesaplama/">Kadınlar için rehberi oku →</a></article></div></div></section>

@@ -236,3 +236,32 @@ html,body{max-width:100%;overflow-x:hidden}
   #sss .faq-icon{right:16px}
   #sss .editorial-body details>p{padding:0 16px 18px;font-size:.95rem}
 }
+
+
+/* === Basic calculator UI — 2026-08-19 === */
+.calculator-simple{max-width:700px;margin-left:auto;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 14px 38px rgba(15,23,42,.07);overflow:hidden}
+.calculator-simple-form{padding:28px}
+.calculator-simple-head{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.calculator-simple-head h2{font-size:1.65rem;line-height:1.2;letter-spacing:-.03em;margin:5px 0 7px}
+.calculator-simple-head p{margin:0;color:var(--muted);font-size:.95rem}
+.calculator-simple .field{margin:0 0 20px}
+.calculator-simple .field>label,.simple-prayers legend{display:block;font-weight:700;margin-bottom:8px;color:var(--ink)}
+.simple-segmented{margin-bottom:0}
+.simple-advanced{margin:2px 0 22px;padding:0;border:1px solid var(--line);border-radius:12px;background:#fafafa}
+.simple-advanced summary{padding:13px 15px;font-size:.9rem}
+.simple-advanced .field{padding:0 15px 15px;margin:0}
+.simple-prayers{border:0;padding:0;margin:0 0 22px}
+.simple-prayer-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.simple-prayer-list label{padding:11px 10px;border-radius:10px;display:grid;grid-template-columns:auto 1fr;column-gap:8px;row-gap:1px;align-items:center}
+.simple-prayer-list label .check-ui{grid-row:1/3}
+.simple-prayer-list label small{font-size:.72rem}
+.simple-plan-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end;margin-bottom:8px}
+.simple-plan-row .field{margin:0}
+.quick-targets{display:flex;gap:6px;padding-bottom:20px}
+.quick-targets button{min-width:42px;height:42px;border:1px solid var(--line);background:#fff;border-radius:10px;font:inherit;font-weight:700;color:var(--ink);cursor:pointer}
+.quick-targets button.is-active,.quick-targets button:hover{border-color:var(--primary);background:#f0fdfa;color:var(--primary)}
+.simple-submit{min-height:52px;margin-top:12px;font-size:1rem;text-transform:none}
+.calculator-simple .form-note{text-align:center;margin:12px 0 0;color:var(--muted);font-size:.78rem}
+@media(max-width:900px){.calculator-simple{max-width:none;margin:0;width:100%}}
+@media(max-width:600px){.hero{padding-top:24px}.hero-inner{gap:24px}.calculator-simple{order:1;border-radius:14px}.hero-copy{order:2}.calculator-simple-form{padding:18px 16px}.calculator-simple-head{margin-bottom:18px;padding-bottom:16px}.calculator-simple-head h2{font-size:1.35rem}.calculator-simple-head p{font-size:.88rem}.simple-prayer-list{grid-template-columns:1fr 1fr}.simple-plan-row{grid-template-columns:1fr}.quick-targets{padding-bottom:0}.quick-targets button{flex:1}.simple-submit{margin-top:18px}.hero-copy .trust-row{display:none}.hero-copy .eyebrow{font-size:.7rem}.hero-copy h1{font-size:2.45rem}.hero-copy .lead{font-size:1rem}}
+@media(max-width:380px){.simple-prayer-list{grid-template-columns:1fr}.simple-segmented span{font-size:.72rem;padding-left:3px;padding-right:3px}}
