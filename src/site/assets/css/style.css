@@ -265,3 +265,9 @@ html,body{max-width:100%;overflow-x:hidden}
 @media(max-width:900px){.calculator-simple{max-width:none;margin:0;width:100%}}
 @media(max-width:600px){.hero{padding-top:24px}.hero-inner{gap:24px}.calculator-simple{order:1;border-radius:14px}.hero-copy{order:2}.calculator-simple-form{padding:18px 16px}.calculator-simple-head{margin-bottom:18px;padding-bottom:16px}.calculator-simple-head h2{font-size:1.35rem}.calculator-simple-head p{font-size:.88rem}.simple-prayer-list{grid-template-columns:1fr 1fr}.simple-plan-row{grid-template-columns:1fr}.quick-targets{padding-bottom:0}.quick-targets button{flex:1}.simple-submit{margin-top:18px}.hero-copy .trust-row{display:none}.hero-copy .eyebrow{font-size:.7rem}.hero-copy h1{font-size:2.45rem}.hero-copy .lead{font-size:1rem}}
 @media(max-width:380px){.simple-prayer-list{grid-template-columns:1fr}.simple-segmented span{font-size:.72rem;padding-left:3px;padding-right:3px}}
+
+/* Homepage cleanup: decorative eyebrow/section labels removed */
+.content-wide{width:min(860px,calc(100% - 32px));margin-left:auto;margin-right:auto}
+.calculator-simple-form{padding-top:32px}
+.calculator-simple-form>.field:first-child{margin-top:0}
+@media(max-width:768px){.content-wide{width:min(100% - 32px,860px)}.calculator-simple-form{padding-top:24px}}

@@ -37,14 +37,13 @@ def update_homepage(home):
   if count!=1: raise RuntimeError('Ana sayfa alanı bulunamadı: '+pattern)
  replace(r'<title>.*?</title>','<title>'+html.escape(home['seo_title'])+'</title>')
  replace(r'<meta name="description" content="[^"]*">','<meta name="description" content="'+html.escape(home['meta_description'],quote=True)+'">')
- replace(r'<span class="eyebrow">.*?</span>','<span class="eyebrow">'+html.escape(home['hero_eyebrow'])+'</span>')
  replace(r'(<section class="hero".*?<div class="hero-copy">.*?<h1>).*?(</h1>)',r'\g<1>'+html.escape(home['h1'])+r'\g<2>')
  replace(r'(<div class="hero-copy">.*?<p class="lead">).*?(</p>)',r'\g<1>'+html.escape(home['hero_lead'])+r'\g<2>')
  replace(r'(<p class="hero-note">).*?(</p>)',r'\g<1>'+html.escape(home['privacy_note'])+r'\g<2>')
- faq_items=''.join('<details><summary><h3>'+html.escape(x['question'])+'</h3><span class="faq-icon" aria-hidden="true"></span></summary><div class="faq-answer">'+render_markdown(x.get('answer',''),include_toc=False)+'</div></details>' for x in home.get('faqs',[]))
- faq_section='<section class="content-section" id="sss"><div class="container editorial-grid"><div class="editorial-aside"><span class="section-label">SIK SORULAN SORULAR</span></div><div class="editorial-body"><h2>'+html.escape(home['faq_heading'])+'</h2>'+faq_items+'</div></div></section>'
+ faq_items=''.join('<details><summary><h3>'+html.escape(x['question'])+'</h3><span class="faq-icon" aria-hidden="true"></span></summary><p>'+html.escape(x['answer'])+'</p></details>' for x in home.get('faqs',[]))
+ faq_section='<section class="content-section" id="sss"><div class="container content-wide"><div class="editorial-body"><h2>'+html.escape(home['faq_heading'])+'</h2>'+faq_items+'</div></div></section>'
  replace(r'<section class="content-section" id="sss">.*?</section>',faq_section)
- faq_schema=json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':x['question'],'acceptedAnswer':{'@type':'Answer','text':re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',render_markdown(x.get('answer',''),include_toc=False))).strip()}} for x in home.get('faqs',[])]},ensure_ascii=False)
+ faq_schema=json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':x['question'],'acceptedAnswer':{'@type':'Answer','text':x['answer']}} for x in home.get('faqs',[])]},ensure_ascii=False)
  replace(r'<script type="application/ld\+json">\{[^\n]*?"FAQPage"[^\n]*?</script>','<script type="application/ld+json">'+faq_schema+'</script>')
  replace(r'(<a class="brand footer-brand".*?</a><p>).*?(</p>)',r'\g<1>'+html.escape(home['footer_description'])+r'\g<2>')
  path.write_text(text,encoding='utf-8')
