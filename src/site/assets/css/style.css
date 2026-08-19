@@ -271,4 +271,32 @@ html,body{max-width:100%;overflow-x:hidden}
 .calculator-simple-form{padding-top:32px}
 .calculator-simple-form>.field:first-child{margin-top:0}
 @media(max-width:768px){.content-wide{width:min(100% - 32px,860px)}.calculator-simple-form{padding-top:24px}}
-\n\n/* Homepage tool-first heading layout */\n.hero-tool-layout{width:min(860px,calc(100% - 32px));margin:0 auto;display:block}\n.calculator-page-title{font-family:var(--sans);font-size:clamp(2.5rem,5.4vw,4.4rem);line-height:1.02;letter-spacing:-.055em;margin:0 0 28px;color:var(--ink);font-weight:800}\n.hero-tool-layout .calculator-simple{max-width:none;width:100%;margin:0}\n@media(max-width:600px){\n  .hero{padding:28px 0 48px}\n  .hero-tool-layout{width:calc(100% - 28px)}\n  .calculator-page-title{font-size:clamp(2.25rem,11vw,3rem);margin-bottom:20px;overflow-wrap:anywhere}\n}\n
+
+
+/* Basic calculator form — 2026-08 */
+.basic-tool-hero{padding:54px 0 68px;background:#fff}
+.basic-tool-wrap{max-width:760px}
+.basic-tool-wrap>h1{margin:0 0 28px;font-size:clamp(2.35rem,5vw,4.2rem);line-height:1.02;letter-spacing:-.055em;color:var(--ink)}
+.calculator-basic{width:100%;max-width:none;margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 34px rgba(15,23,42,.06);overflow:hidden}
+.calculator-basic-form{padding:30px}
+.calculator-basic-form .field{margin:0 0 24px}
+.calculator-basic-form .field>label,.basic-prayers legend{display:block;margin:0 0 9px;font-weight:700;color:var(--ink);font-size:1rem}
+.calculator-basic-form input[type="date"],.calculator-basic-form input[type="number"]{width:100%;min-height:52px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:0 14px;font:inherit;color:var(--ink)}
+.calculator-basic-form input:focus{outline:0;border-color:var(--primary);box-shadow:0 0 0 3px rgba(15,118,110,.11)}
+.basic-prayers{border:0;padding:0;margin:6px 0 26px}
+.basic-prayer-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.basic-prayer-list label{min-width:0;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;display:grid;grid-template-columns:auto 1fr;column-gap:8px;row-gap:1px;align-items:center;cursor:pointer}
+.basic-prayer-list label:has(input:checked){border-color:#99d8cf;background:#f0fdfa}
+.basic-prayer-list .check-ui{grid-row:1/3}
+.basic-prayer-list small{font-size:.72rem;color:var(--muted)}
+.basic-submit{min-height:54px;border-radius:9px;font-size:1rem;font-weight:800;letter-spacing:.04em}
+@media(max-width:600px){
+ .basic-tool-hero{padding:28px 0 50px}
+ .basic-tool-wrap{width:min(100% - 24px,760px)}
+ .basic-tool-wrap>h1{font-size:2.35rem;margin-bottom:20px}
+ .calculator-basic{border-radius:14px}
+ .calculator-basic-form{padding:20px 16px}
+ .calculator-basic-form .field{margin-bottom:20px}
+ .basic-prayer-list{grid-template-columns:1fr 1fr}
+}
+@media(max-width:380px){.basic-prayer-list{grid-template-columns:1fr}}

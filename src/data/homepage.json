@@ -18,7 +18,7 @@
     },
     {
       "question": "Kaza namazı hesaplama yaşı kaçtır?",
-      "answer": "Başlangıç yaşı kişiye ve ergenlik tarihine göre değişir. Araç otomatik bir yaş varsaymak yerine kullanıcının eksik yıl, gün veya tarih aralığını girmesini sağlar."
+      "answer": "Başlangıç tarihi kişiye göre değişir. Araçta doğum tarihinizi ve namaz yükümlülüğünün başladığını kabul ettiğiniz buluğ çağı tarihini girerek hesabı kişiselleştirebilirsiniz."
     },
     {
       "question": "Kadınlarda kaza namazı nasıl hesaplanır?",
@@ -58,7 +58,7 @@
     },
     {
       "question": "Günde kaç kaza namazı kılınmalıdır?",
-      "answer": "Herkes için zorunlu tek bir günlük sayı yoktur. Araç 1, 5 ve 10 vakitlik örnek planlar ile özel hedef sunarken sürdürülebilir bir hedef seçmek önemlidir."
+      "answer": "Herkes için zorunlu tek bir günlük sayı yoktur. Hesaplama sonucu toplam kaza vakti miktarını gösterir; günlük tamamlama planı kişinin imkânına ve sürdürülebilirliğine göre ayrıca belirlenebilir."
     },
     {
       "question": "Kaza namazı çizelgesi nasıl kullanılır?",
