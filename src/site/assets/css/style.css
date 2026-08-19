@@ -271,3 +271,4 @@ html,body{max-width:100%;overflow-x:hidden}
 .calculator-simple-form{padding-top:32px}
 .calculator-simple-form>.field:first-child{margin-top:0}
 @media(max-width:768px){.content-wide{width:min(100% - 32px,860px)}.calculator-simple-form{padding-top:24px}}
+\n\n/* Homepage tool-first heading layout */\n.hero-tool-layout{width:min(860px,calc(100% - 32px));margin:0 auto;display:block}\n.calculator-page-title{font-family:var(--sans);font-size:clamp(2.5rem,5.4vw,4.4rem);line-height:1.02;letter-spacing:-.055em;margin:0 0 28px;color:var(--ink);font-weight:800}\n.hero-tool-layout .calculator-simple{max-width:none;width:100%;margin:0}\n@media(max-width:600px){\n  .hero{padding:28px 0 48px}\n  .hero-tool-layout{width:calc(100% - 28px)}\n  .calculator-page-title{font-size:clamp(2.25rem,11vw,3rem);margin-bottom:20px;overflow-wrap:anywhere}\n}\n

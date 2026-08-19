@@ -37,9 +37,7 @@ def update_homepage(home):
   if count!=1: raise RuntimeError('Ana sayfa alanı bulunamadı: '+pattern)
  replace(r'<title>.*?</title>','<title>'+html.escape(home['seo_title'])+'</title>')
  replace(r'<meta name="description" content="[^"]*">','<meta name="description" content="'+html.escape(home['meta_description'],quote=True)+'">')
- replace(r'(<section class="hero".*?<div class="hero-copy">.*?<h1>).*?(</h1>)',r'\g<1>'+html.escape(home['h1'])+r'\g<2>')
- replace(r'(<div class="hero-copy">.*?<p class="lead">).*?(</p>)',r'\g<1>'+html.escape(home['hero_lead'])+r'\g<2>')
- replace(r'(<p class="hero-note">).*?(</p>)',r'\g<1>'+html.escape(home['privacy_note'])+r'\g<2>')
+ replace(r'(<h1 class="calculator-page-title">).*?(</h1>)',r'\g<1>'+html.escape(home['h1'])+r'\g<2>')
  faq_items=''.join('<details><summary><h3>'+html.escape(x['question'])+'</h3><span class="faq-icon" aria-hidden="true"></span></summary><p>'+html.escape(x['answer'])+'</p></details>' for x in home.get('faqs',[]))
  faq_section='<section class="content-section" id="sss"><div class="container content-wide"><div class="editorial-body"><h2>'+html.escape(home['faq_heading'])+'</h2>'+faq_items+'</div></div></section>'
  replace(r'<section class="content-section" id="sss">.*?</section>',faq_section)
