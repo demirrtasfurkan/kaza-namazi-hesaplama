@@ -3,12 +3,12 @@
   "meta_description": "Doğum ve buluğ çağı tarihlerinizi, namaz kıldığınız yıl ve ay süresini girerek yaklaşıkt kaza namazı borcunuzu vakit bazında hesaplayın.",
   "h1": "Kaza Namazı Hesaplama",
   "privacy_note": "Kişisel bilgileriniz tarayıcınızdan çıkmaz.",
-  "footer_description": "Kaza namazı borcunuzu vakit bazında yaklaşık hesaplamanıza yardımcı olan ücretsiz hesaplama aracı.",
+  "footer_description": "Kaza namazı borcunuzu vakit bazında yaklaşık hesaplamanıza yardımcı olan ücretsiz kaza namazı hesaplama aracı.",
   "faq_heading": "Sıkça Sorulan Sorular",
   "faqs": [
     {
       "question": "Kaza namazı nedir?",
-      "answer": "Kaza namazı, vaktinde kılınamayan farz namazın daha sonra kılınmasıdır. Hesaplama aracı; doğum ve buluğ çağı tarihleri, namaz kılınan süre ve seçilen vakitler üzerinden yaklaşık bir kaza namazı borcu hesaplar."
+      "answer": "Kaza namazı, vaktinde kılınamayan farz namazın daha sonra kılınmasıdır. Kaz namazı hesaplama aracı; doğum ve buluğ çağı tarihleri, namaz kılınan süre ve seçilen vakitler üzerinden yaklaşık bir kaza namazı borcu hesaplar."
     },
     {
       "question": "Kaza namazı nasıl hesaplanır?",
@@ -44,11 +44,11 @@
     },
     {
       "question": "Vitir hesaba dahil edilir mi?",
-      "answer": "Diyanet'in Hanefî yaklaşımında vitir namazının kazası gerektiği belirtilir; diğer mezheplerde değerlendirme farklı olabilir. Bu nedenle araçta vitir ayrı bir seçenek olarak sunulur."
+      "answer": "Diyanet'in Hanefi yaklaşımında vitir namazının kazası gerektiği belirtilir; diğer mezheplerde değerlendirme farklı olabilir. Bu nedenle araçta vitir ayrı bir seçenek olarak sunulur."
     },
     {
       "question": "Diyanet kaza namazı hesaplama aracı sunuyor mu?",
-      "answer": "Bu site Diyanet'e ait değildir. Araç, Diyanet'in yayımladığı genel bilgilerden de yararlanarak yaklaşık matematiksel plan sunar; resmi fetva veya kişisel dini danışmanlık yerine geçmez."
+      "answer": "Bu site Diyanet'e ait değildir. Araç, Diyanet'in yayımladığı genel bilgilerden de yararlanarak yaklaşık matematiksel plan suna, resmi fetva veya kişisel dini danışmanlık yerine geçmez."
     },
     {
       "question": "Kaza namazı ne zaman kılınır?",
@@ -56,7 +56,7 @@
     },
     {
       "question": "Günde kaç kaza namazı kılınmalıdır?",
-      "answer": "Herkes için zorunlu tek bir günlük sayı yoktur. Araç yaklaşık toplam kaza vakti miktarını gösterir; günlük uygulama planı kişinin imkânına ve sürdürülebilirliğine göre ayrıca belirlenebilir."
+      "answer": "Herkes için zorunlu tek bir günlük sayı yoktur. Araç yaklaşık toplam kaza vakti miktarını gösterirgünlük uygulama planı kişinin imkanına ve sürdürülebilirliğine göre ayrıca belirlenebilir."
     },
     {
       "question": "Kaza namazı çizelgesi nasıl kullanılır?",
