@@ -1,0 +1,88 @@
+backend:
+  name: github
+  repo: demirrtasfurkan/kaza-namazi-hesaplama
+  branch: main
+
+site_url: https://kazanamazihesapla.com
+display_url: https://kazanamazihesapla.com
+logo_url: /assets/icons/favicon.svg
+locale: tr
+
+media_folder: src/site/assets/uploads
+public_folder: /assets/uploads
+
+# Rich text alanlarında link butonunu her zaman görünür tut.
+# Metni seçip zincir ikonuna tıklayarak /sayfa-slug/ biçiminde iç link eklenebilir.
+field_defaults:
+  richtext:
+    modes: [rich_text, raw]
+    buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote]
+    editor_components: [image]
+    sanitize_preview: true
+
+collections:
+  - name: site_content
+    label: Site İçerikleri
+    files:
+      - name: homepage
+        label: Ana Sayfa
+        file: src/data/homepage.json
+        format: json
+        fields:
+          - {name: seo_title, label: SEO Başlığı, widget: string}
+          - {name: meta_description, label: Meta Açıklaması, widget: text}
+          - {name: h1, label: Ana Başlık (H1), widget: string}
+          - {name: privacy_note, label: Gizlilik Notu, widget: string}
+          - {name: footer_description, label: Footer Açıklaması, widget: text}
+          - {name: faq_heading, label: SSS Başlığı, widget: string}
+          - name: faqs
+            label: Ana Sayfa Sıkça Sorulan Sorular
+            widget: list
+            summary: "{{fields.question}}"
+            fields:
+              - {name: question, label: Soru, widget: string}
+              - name: answer
+                label: Cevap
+                widget: richtext
+                hint: "Cevap içinde link eklemek için metni seçin → zincir ikonuna tıklayın → /hedef-sayfa/ biçiminde URL girin."
+
+      - name: guides
+        label: Rehber Yazıları
+        file: src/data/pages.json
+        format: json
+        fields:
+          - name: pages
+            label: Sayfalar
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - name: slug
+                label: URL Slug
+                widget: string
+                hint: Yayındaki bir sayfada bu alanı değiştirmek URL'yi değiştirir.
+                pattern: ['^[a-z0-9-]+$', 'Yalnızca küçük harf, rakam ve tire kullanın.']
+              - {name: title, label: SEO Başlığı, widget: string}
+              - {name: description, label: Meta Açıklaması, widget: text}
+              - {name: h1, label: Sayfa Başlığı (H1), widget: string}
+              - {name: intro, label: Giriş Özeti, widget: text}
+              - name: content_markdown
+                label: Makale İçeriği
+                widget: richtext
+                hint: "Makale içinde H1 kullanmayın; ana bölümleri H2, alt bölümleri H3 yapın. İç link eklemek için metni seçin → zincir (link) ikonuna tıklayın → /hedef-sayfa/ biçiminde URL girin."
+              - name: faqs
+                label: Sık Sorulan Sorular
+                widget: list
+                required: false
+                summary: "{{fields.question}}"
+                fields:
+                  - {name: question, label: Soru, widget: string}
+                  - {name: answer, label: Cevap, widget: richtext}
+              - name: sources
+                label: Kaynaklar
+                widget: list
+                required: false
+                summary: "{{fields.label}}"
+                fields:
+                  - {name: label, label: Bağlantı Metni, widget: string}
+                  - {name: url, label: URL, widget: string}
+              - {name: source_note, label: Kaynak Notu, widget: text, required: false}

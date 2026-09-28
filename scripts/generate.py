@@ -11,7 +11,7 @@ def duration(days):
  y=int(days//365.2425); m=int((days-y*365.2425)//30.44)
  return ' '.join(x for x in [f'{y} yıl' if y else '',f'{m} ay' if m else ''] if x) or f'{int(days)} gün'
 def footer(description='Yaklaşık borç hesabı ve sürdürülebilir günlük plan oluşturma aracı.'):
- return '<footer><div class="container footer-grid"><div><strong>Kaza Namazı Hesaplama</strong><p>'+html.escape(description)+'</p></div><div><strong>Rehber</strong><a href="/kaza-namazi-nedir/">Kaza namazı nedir?</a><a href="/kaza-namazi-nasil-kilinir/">Nasıl kılınır?</a><a href="/kaza-namazi-nasil-hesaplanir/">Nasıl hesaplanır?</a></div><div><strong>Site</strong><a href="/rehber/">Tüm rehberler</a><a href="/metodoloji">Metodoloji</a><a href="/gizlilik">Gizlilik</a></div></div></footer>'
+ return '<footer><div class="container footer-grid"><div><strong>Kaza Namazı Hesaplama</strong><p>'+html.escape(description)+'</p></div><div><strong>Rehber</strong><a href="/kaza-namazi-nedir/">Kaza namazı nedir?</a><a href="/kaza-namazi-nasil-kilinir/">Nasıl kılınır?</a><a href="/kaza-namazi-nasil-hesaplanir/">Nasıl hesaplanır?</a></div><div><strong>Site</strong><a href="/rehber/">Tüm rehberler</a><a href="/metodoloji">Metodoloji</a><a href="/gizlilik">Gizlilik</a><a href="https://plakarehberi.com/">Plaka Sorgulama</a></div></div></footer>'
 
 def article_content(page):
  body=render_markdown(page.get('content_markdown',''))

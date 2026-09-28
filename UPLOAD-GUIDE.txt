@@ -1,45 +1,22 @@
-GITHUB'A YÜKLEME
+FOOTER BAĞLANTISI GÜNCELLEMESİ
 
-Bu pakette 100'den az dosya vardır. ZIP'i ayıklayıp aşağıdaki öğeleri
-GitHub reposunun köküne birlikte yükleyin:
+1. ZIP dosyasını bilgisayarınızda ayıklayın.
+2. İçindeki src ve scripts klasörlerini ve build.py ile wrangler.jsonc dosyalarını mevcut GitHub deposunun köküne yükleyin. ZIP dosyasının kendisini yüklemeyin.
+3. Mevcut dosyaları aynı yollar üzerinde güncelleyin; yeni bir üst klasör oluşturmayın.
+4. Commit sonrası Cloudflare build ve deploy işlemlerinin başarıyla tamamlanmasını bekleyin.
 
-src
-scripts
-.gitignore
-build.py
-wrangler.jsonc
-README.md
-UPLOAD-GUIDE.txt
-CMS-KULLANIM-REHBERI.txt
+Beklenen dosyalar:
+/src/site/index.html
+/scripts/generate.py
+/build.py
+/wrangler.jsonc
 
-GitHub'a dist klasörü yüklenmeyecek. Zaten pakette bulunmaz.
+Cloudflare:
+Root directory: / (depo kökü)
+Build command: python build.py
+Workers deploy command: npx wrangler deploy
+Pages build output directory: dist
 
-Commit mesajı:
-İçerik yönetim paneli ve otomatik yayın akışı
+Paket hazır dist çıktısını da içerir. Git bağlantılı build için src ve scripts kaynakları esas alınır.
 
-
-CLOUDFLARE AYARI
-
-Build command:
-python build.py
-
-Deploy command:
-npx wrangler deploy
-
-Root directory:
-/
-
-Wrangler yapılandırması:
-wrangler.jsonc
-
-Build sonucunda scripts/generate.py otomatik olarak dist klasörünü üretir.
-wrangler.jsonc de ./dist klasörünü yayınlar.
-
-
-İLK TEST URL'LERİ
-
-/
-/admin/
-/rehber/
-/kaza-namazi-nasil-kilinir/
-sitemap.xml
+Kontrol: Ana sayfa ve rehber footer'ında Plaka Sorgulama bağlantısı https://plakarehberi.com/ adresine yönlenmelidir.
